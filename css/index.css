@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+      
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    color: #1E8AAE;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.btn {
+    font-size:1em;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    border: .5px solid black;
+    background-color: transparent;
+    padding: 14px 28px;
+    cursor: pointer;
+}
+
+.btn:hover{
+      text-decoration: none;
+      color: white;
+      border-color:#1E8AAE;
+      background-color: #1E8AAE;
+}
+
+.fitimage {
+    object-fit: contain;
+}
+
+/* Typography
+ ===========================*/
+
+H1{
+    font-size: 2.5em;
+    margin: 0;
+}
+
+H2 {
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+
+/* Navigation
+========================================= */
+
+
+nav{
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 25px;
+    font-size: 1em;
+
+}
+
+nav a:hover{
+    color: #1E8AAE;
+}
+
+.left{
+    display: flex;
+    width: 25%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0px;
+
+}
+
+.right{
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+ }
+
+
+/* Hero 
+===================================================== */
+
+.hero-bg{
+    background-image: url("../images/bluesky-1920.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.home-title {
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        color: black;
+        height: auto;
+        margin-top: 100px;
+}
+
+
+.intro{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    color: black;
+    margin-top: 225px;
+}
+
+
+.workbutton{
+    text-align: center;
+    width:100%;
+    position: absolute;
+    color: black;
+    margin-top: 425px;
+}
+
+.divearrow {
+    text-align: center;
+    width:100%;
+    position: absolute;
+    margin-top: 500px;
+}
+
+/* WORK SECTION 
+===================================================== */
+
+.home-work {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: top;
+    padding: 0.5em;
+
+}
+
+.work-image{
+   flex: 1;
+   padding: 1em;
+
+}
+
+.work-text {
+   flex: 1;
+   padding: 1em;
+ 
+}
+
+
+/* ABOUT SECTION 
+================================================== */
+
+.home-about {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: top;
+    margin-top: 2em;
+    padding: 0.5em;
+    justify-content: center;
+    background: #afc3cc;
+}
+
+.about-text {
+    text-align: center;
+    flex: 1;
+    padding: 1em;
+}
+
+.about-photo {
+    text-align: center;
+    flex: 1;
+}
+
+
+/* FOOTER SECTION 
+============================================= */
+
+.footer-container {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.unstyled-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer li{
+    display: inline-block;
+    margin: 1em;
+}
+
+
+
+
+/* MEDIA QUERIES 
+============================================= */
+
+
+@media screen and (max-width: 768px){
+    .home-work{
+        flex-direction: column;
+    }
+
+    .home-about{
+        flex-direction: column;
+    }
+}
