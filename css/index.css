@@ -10,6 +10,7 @@ body {
     width: 100%;
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
+    height: 100vh;
 }
 
 img{
@@ -20,6 +21,7 @@ img{
 a{
     color: #1E8AAE;
     cursor: pointer;
+    text-decoration: none;
 }
 
 a:hover{
@@ -41,9 +43,9 @@ a:hover{
 
 .btn:hover{
       text-decoration: none;
-      color: white;
-      border-color:#1E8AAE;
-      background-color: #1E8AAE;
+      color:white;
+      border-color: #1E8AAE; 
+      background-color:#1E8AAE ;
 }
 
 .fitimage {
@@ -92,7 +94,7 @@ nav a:hover{
     width: 25%;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 20px;
 
 }
 
@@ -154,6 +156,7 @@ nav a:hover{
 /* WORK SECTION 
 ===================================================== */
 
+/*
 .home-work {
     display: flex;
     flex-direction: row;
@@ -162,40 +165,99 @@ nav a:hover{
     align-items: top;
     padding: 0.5em;
 
+}*/
+
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "work-image1 work-text1"
+    "work-image2 work-text2"
+    "work-image3 work-text3";
 }
 
-.work-image{
-   flex: 1;
-   padding: 1em;
 
+#work-image1{
+   grid-area: work-image1;
+   object-fit: contain;
+  
 }
 
-.work-text {
-   flex: 1;
-   padding: 1em;
+#work-text1 {
+   grid-area: work-text1;
+
+}
+#work-image2{
+    grid-area: work-image2;
+    object-fit: contain;
+    background-color: #E6EBF1;
+   
+ }
  
+ #work-text2 {
+    grid-area: work-text2;
+    background-color: #E6EBF1;
+ }
+
+ #work-image3{
+    grid-area: work-image3;
+    object-fit: contain;
+   
+ }
+ 
+ #work-text3 {
+    grid-area: work-text3;
+ 
+ }
+.workGridArea {
+    padding: 2em;
 }
 
+/* MY UX SKILLS SECTION
+================================================= */
+
+.mySKills {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.section-title {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #E6EBF1;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+}
+.flexItem {
+    flex: 1;
+    padding: 1em;
+    margin: 1em;
+}
 
 /* ABOUT SECTION 
 ================================================== */
 
 .home-about {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    align-items: top;
-    margin-top: 2em;
-    padding: 0.5em;
-    justify-content: center;
-    background: #afc3cc;
+    flex-direction: column;
+    margin: 0;
 }
 
 .about-text {
     text-align: center;
     flex: 1;
     padding: 1em;
+   
 }
 
 .about-photo {
@@ -208,9 +270,11 @@ nav a:hover{
 ============================================= */
 
 .footer-container {
-    height: 50px;
+    height: auto;
     width: 100%;
     text-align: center;
+    vertical-align: center;
+    background-color: #E6EBF1;
 }
 
 .unstyled-list{
@@ -221,7 +285,7 @@ nav a:hover{
 
 footer li{
     display: inline-block;
-    margin: 1em;
+    margin: 0.5em;
 }
 
 
@@ -231,12 +295,30 @@ footer li{
 ============================================= */
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 600px){
     .home-work{
         flex-direction: column;
     }
-
+    .flexContainer {
+        flex-direction: column;
+    }
     .home-about{
         flex-direction: column;
     }
+    .workGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.75fr 1fr 1.75fr 1fr 1.75fr;
+        grid-template-areas: 
+        "work-image1"
+        "work-text1"
+        "work-image2"
+        "work-text2"
+        "work-image3"
+        "work-text3";
+    }
+    .workGridArea {
+        padding: 1em;
+    }
+    
 }

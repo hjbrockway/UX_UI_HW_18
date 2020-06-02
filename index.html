@@ -7,6 +7,7 @@
     <link href="css/index.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+    <a name="top"></a>
 
     <section class="hero-bg">
         <nav>
@@ -15,9 +16,9 @@
             </div>   
 
             <div class="right">
-                <a href="">WORK</a>
-                <a href="">SKILLS</a>
-                <a href="">ABOUT</a>
+                <a href="#work">WORK</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#about">ABOUT</a>
                 <a href="">CONTACT</a>
             </div>
         </nav>
@@ -44,14 +45,15 @@
             <img src="images/divearrow.svg">
         </div> 
     </section>
-
+<!-- My Work Section Constructed using CSS Grid-->
     <a name="work"></a>
-
-    <section class="home-work">
-        <div class="work-image">
-            <img class="fitimage" src="images/traviscounty_mockup.png" alt="Travis County Responsive Redesign">
+    <div class="section-title"> <h2>My Work</h2> </div>
+    <section class="workGrid">
+        <div id="work-image1" class="workGridArea">
+            <img src="images/traviscounty_mockup.png" alt="Travis County mockup">
+            
         </div>
-        <div class="work-text">
+        <div id="work-text1" class="workGridArea">
             <h2>Travis County Responsive Redesign</h2>
             <p>A lesson in information architecture.</p>
             <p><strong>Challenge:</strong> Can you, as a resident of Travis County, quickly navigate <a href="https://www.traviscountytx.gov/" alt="Travis County website">traviscountytx.gov</a> 
@@ -69,41 +71,140 @@
             <br>
             <p style="text-align: center"><a href="#" class="btn" alt="View Travis County Case Study">VIEW CASE STUDY</a></p>
         </div>
+
+
+        <div id="work-image2" class="workGridArea">
+            <img src="images/traviscounty_mockup.png" alt="Travis County mockup">
+        </div>
+        <div id="work-text2" class="workGridArea">
+            <h2>Travis County Responsive Redesign</h2>
+            <p>A lesson in information architecture.</p>
+            <p><strong>Challenge:</strong> Can you, as a resident of Travis County, quickly navigate <a href="https://www.traviscountytx.gov/" alt="Travis County website">traviscountytx.gov</a> 
+                and find information about your voter registration (without using Google search)?
+            </p>
+            <p><strong>PROJECT OVERVIEW</strong></p>
+            <p><strong>My Responsibilities:</strong> UX/UI Research, Analysis, and Design</p>
+            <p>
+                <strong>Timeline:</strong> 6 weeks
+            </p>
+            <p><strong>Objective: </strong>Redesign the Travis County homepage and navigation to be responsive and efficient. </p>
+            <p>
+                <strong>Design Process:</strong> Heuristic Evaluation, Proto-Persona, Geurrilla Usability Test, Redline & Annotate, Card Sort, Sitemap, UI Style Guide, Prototype, Test, Iterate
+            </p>
+            <br>
+            <p style="text-align: center"><a href="#" class="btn" alt="View Case Study">VIEW CASE STUDY</a></p>
+        </div>
+
+        
+        <div id="work-image3" class="workGridArea">
+            <img src="images/traviscounty_mockup.png" alt="Travis County mockup">
+        </div>
+        <div id="work-text3" class="workGridArea">
+            <h2>Travis County Responsive Redesign</h2>
+            <p>A lesson in information architecture.</p>
+            <p><strong>Challenge:</strong> Can you, as a resident of Travis County, quickly navigate <a href="https://www.traviscountytx.gov/" alt="Travis County website">traviscountytx.gov</a> 
+                and find information about your voter registration (without using Google search)?
+            </p>
+            <p><strong>PROJECT OVERVIEW</strong></p>
+            <p><strong>My Responsibilities:</strong> UX/UI Research, Analysis, and Design</p>
+            <p>
+                <strong>Timeline:</strong> 6 weeks
+            </p>
+            <p><strong>Objective: </strong>Redesign the Travis County homepage and navigation to be responsive and efficient. </p>
+            <p>
+                <strong>Design Process:</strong> Heuristic Evaluation, Proto-Persona, Geurrilla Usability Test, Redline & Annotate, Card Sort, Sitemap, UI Style Guide, Prototype, Test, Iterate
+            </p>
+            <br>
+            <p style="text-align: center"><a href="#" class="btn" alt="View Case Study">VIEW CASE STUDY</a></p>
+        </div>
+
     </section>
     
-    
+
+    <a name="skills"></a>
+    <section class="mySkills"> 
+        <div class="section-title">
+            <h2>MY UX SKILLS</h2>
+        </div>
+        <div class="flexContainer">
+            <div class="flexItem">
+                <img class="fitimage" src="images/userresearch.jpg" alt="user research photo">
+                <h2>User Research</h2>
+                <p>People have always fascinated me. I prefer to read 
+                    real stories about real people.  I love learning
+                    about people and understanding their motivations
+                    and challenges. I enjoy observing, listening, and
+                    asking the bigger questions. My curiosity, compassion
+                    and natural ability to empathize with others is
+                    my strength. </p>
+            </div>
+            <div class="flexItem">
+                <img class="fitimage" src="images/uidesign.jpg" alt="user interface design photo">
+                <h2>User Interface Design</h2>
+                <p>UI design is a creative challenge that is in constant 
+                    iteration according to user research and business 
+                    goals. I enjoy creating user experiences that are fun
+                    and engaging, simple and elegant, and most of all
+                    easy on everybody.  Creative problem solving is fun
+                    when we can explore,  play and build on top of
+                    each other's ideas with no fear of making mistakes. </p>
+            </div>
+            <div class="flexItem">
+                <img class="fitimage" src="images/webdev.jpg" alt="web development">
+                <h2>Web Development</h2>
+                <p>I studied computer science in college and learned 
+                    the theory and practice of software development
+                    and logical/analytical thinking. I found myself
+                    more interested in the look and feel of things
+                    than what's under the hood, but I have a great
+                    appreciation for developers and understand how
+                    they think. Front-end skills include HTML/CSS, 
+                    JavaScript, Bootstrap and Angular.  </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <a name="about"></a>
     <section class="home-about">
-        <div class="about-text">
-            <h2>What makes Hsin-Ju a killer user experience designer?</h2>
-            <p>Well, er...</p>
-        
-                <p>Computer nerd turned photographer <br>
-                Hard working, risk taking entrepreneur.</p>
-                
-                <p>Caring mother, compassionate leader <br>
-                Connecting and lifting each other.</p>
-                
-                <p>Curious observer, life-long learner,<br>
-                Studying mysteries and histories of the wiser.</p>
-                
-                <p>People lover, problem solver,<br>
-                Understanding perspectives of culture.</p>
-                
-                <p>Growing older, becoming bolder<br>
-                Exploring new endeavors as a creator.</p>  
-                
-                <p>A multi-layer player, boredom slayer,<br>
-                Seeking challenging work together.</p>
-                
-                <p>A dreamer, a believer of humor,<br>
-                Joy and happily ever afters.</p><br>
-
-                <p><a href="#" class="btn" alt="More about HJ">MY STORY</a></p>
+        <div class="section-title">
+            <h2>ABOUT HSIN-JU</h2>
         </div>
-        <div class="about-photo">
-            <img id="fitimage"" src="images/hj-headshot.jpg" alt="photo of hj">
+        <div class="flexContainer">
+            <div class="about-text">
+                <h2>What makes HJ a killer user experience designer?</h2>
+                <p>Well, er...</p>
+            
+                    <p>Computer nerd turned photographer <br>
+                    Hard working, risk taking entrepreneur.</p>
+                    
+                    <p>Caring mother, compassionate leader <br>
+                    Connecting and lifting each other.</p>
+                    
+                    <p>Curious observer, life-long learner,<br>
+                    Studying mysteries and histories of the wiser.</p>
+                    
+                    <p>People lover, problem solver,<br>
+                    Understanding perspectives of culture.</p>
+                    
+                    <p>Growing older, becoming bolder<br>
+                    Exploring new endeavors as a creator.</p>  
+                    
+                    <p>A multi-layer player, boredom slayer,<br>
+                    Seeking challenging work together.</p>
+                    
+                    <p>A dreamer, a believer of humor,<br>
+                    Joy and happily ever afters.</p><br>
 
-        </div>
+                    <p><a href="#" class="btn" alt="More about HJ">MY STORY</a></p>
+            </div>
+            <div class="about-photo">
+                <img id="fitimage" src="images/hj-headshot.jpg" alt="photo of hj">
+
+            </div>
+       </div>
     </section>
     
     <footer>
@@ -111,11 +212,20 @@
             <ul class="unstyled-list">
                 <li>Copyright © 2020 </li>
                 <li>|</li>
-                <li>hjbrockway.com</li>
-                <li>|</li>
                 <li>Austin, TX </li>
+                <li>|</li>
+                <li>HJ Brockway </li>
+                <li>|</li>
+                <li><a href="#top">Home </a></li>
+                <li>|</li>
+                <li><a href="#work">Work </a></li>
+                <li>|</li>
+                <li><a href="#skills">Skills </a></li>
+                <li>|</li>
+                <li><a href="#about">About </a></li>
+                <li>|</li>
+                <li><a href="">Contact </a></li>
             </ul>  
-
         </div>
     </footer>
     
